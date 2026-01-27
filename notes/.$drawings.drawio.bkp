@@ -1,0 +1,46 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="Ds11_dLsOSg652oT7RpR">
+    <mxGraphModel dx="1426" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;" value="PORTFOLIO (MVP - Condensed)" vertex="1">
+          <mxGeometry height="1030" width="770" x="40" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#999999;" value="Header / Nav&#xa;[Name/Logo]   [Projects] [Skills] [Contact]   (optional: Theme Toggle)" vertex="1">
+          <mxGeometry height="70" width="730" x="60" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#999999;" value="Hero&#xa;Name + Target Role (1-line value prop)&#xa;2 CTAs: [View Projects] [Download CV]&#xa;Mini proof chips (3): Embedded / Industrial-OT / Software" vertex="1">
+          <mxGeometry height="155" width="730" x="60" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#999999;verticalAlign=top;" value="Featured Projects (3)&#xa;Each card: Problem → Approach → Evidence + Tags + Links" vertex="1">
+          <mxGeometry height="300" width="730" x="60" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" value="Project Card&#xa;Title&#xa;Problem / Approach / Evidence&#xa;Tags + Links" vertex="1">
+          <mxGeometry height="220" width="220" x="80" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" value="Project Card&#xa;Title&#xa;Problem / Approach / Evidence&#xa;Tags + Links" vertex="1">
+          <mxGeometry height="220" width="220" x="315" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" value="Project Card&#xa;Title&#xa;Problem / Approach / Evidence&#xa;Tags + Links" vertex="1">
+          <mxGeometry height="220" width="220" x="550" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#999999;verticalAlign=top;" value="Skills (Grouped, short)&#xa;Scannable keywords only" vertex="1">
+          <mxGeometry height="190" width="730" x="60" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" value="Embedded&#xa;C/C++ • FreeRTOS • STM32&#xa;Debug/Trace • UART/TLV" vertex="1">
+          <mxGeometry height="130" width="220" x="80" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" value="Industrial / OT&#xa;PLC • Interlocks • Commissioning&#xa;Docs • FAT/SAT mindset" vertex="1">
+          <mxGeometry height="130" width="220" x="315" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" value="Software / Web&#xa;JS/React • Python • SQL&#xa;APIs • Linux • Git" vertex="1">
+          <mxGeometry height="130" width="220" x="550" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="70" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#999999;" value="Contact / Footer&#xa;2-line About: direction + what you build&#xa;Email • Location • GitHub • LinkedIn&#xa;(Optional: single &#39;Email me&#39; button)" vertex="1">
+          <mxGeometry height="150" width="730" x="60" y="830" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,46 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="Ds11_dLsOSg652oT7RpR">
+    <mxGraphModel dx="1402" dy="854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10" value="PORTFOLIO (Wireframe)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;" parent="1" vertex="1">
+          <mxGeometry x="40" width="770" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="Header / Nav&#xa;[Logo/Name]   [Projects] [Skills] [About] [Contact]   [Theme Toggle]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="60" y="60" width="730" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="Hero&#xa;Name + Role (1 line value prop)&#xa;2 CTAs: [View Projects] [Download CV]&#xa;Mini proof: (3 chips) Embedded / OT Support / Web Tools" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="60" y="145" width="730" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="Featured Projects (3)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="60" y="320" width="730" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="Project Card&#xa;Title&#xa;Problem / Approach / Proof&#xa;Tags + Links" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" parent="1" vertex="1">
+          <mxGeometry x="80" y="360" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="Project Card&#xa;Title&#xa;Problem / Approach / Proof&#xa;Tags + Links" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" parent="1" vertex="1">
+          <mxGeometry x="315" y="360" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="Project Card&#xa;Title&#xa;Problem / Approach / Proof&#xa;Tags + Links" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" parent="1" vertex="1">
+          <mxGeometry x="550" y="360" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="50" value="Skills (Grouped)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="60" y="620" width="730" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="Embedded&#xa;C/C++ • FreeRTOS • STM32&#xa;Debug/Trace • UART/TLV" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" parent="1" vertex="1">
+          <mxGeometry x="80" y="660" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="Industrial / OT&#xa;PLC • Interlocks • Commissioning&#xa;Docs • FAT/SAT mindset" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" parent="1" vertex="1">
+          <mxGeometry x="315" y="660" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="Software / Web&#xa;JS/React • Python • SQL&#xa;APIs • Linux • Git" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;" parent="1" vertex="1">
+          <mxGeometry x="550" y="660" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="70" value="Contact&#xa;Email + Location + Links (GitHub / LinkedIn)&#xa;Short form (optional)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="60" y="830" width="730" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,372 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4ZE8FYT5V"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-        gtag('config', 'G-B4ZE8FYT5V');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/jpg" href="./Icons/favicon.ico" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Home</title>
-</head>
 
-<body>
+    <title>Shelton Ngwenya | Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Header / Nav -->
     <header id="navbar">
-        <nav class="navbar-container container">
-            <div class="logo">
-                <img src="./images/LOGO(2).png" alt="<shelshock>">
-            </div>
-            <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-menu">
-                <ul class="navbar-links">
-                    <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="#services">Services</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="#skills">Skills</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="#projects">Projects</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar-container container">
+        <a class="logo" href="#home" aria-label="Home">
+          <img src="./images/LOGO(2).png" alt="Shelton logo" />
+        </a>
+
+        <button
+          type="button"
+          class="navbar-toggle"
+          aria-label="Open navigation menu"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="navbar-menu">
+          <ul class="navbar-links">
+            <li class="navbar-item">
+              <a class="navbar-link" href="#projects">Projects</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#skills">Skills</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#contact">Contact</a>
+            </li>
+
+            <!-- Optional: Theme toggle -->
+            <li class="navbar-item navbar-item--theme">
+              <button
+                id="themeToggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Toggle theme"
+              >
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+                <span class="theme-toggle__label">Theme</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <!--Introduction-->
-    <section class="intro" id="home">
-        <div class="overlay ">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Shelton Ngwenya</strong>
-            </h1>
-            <div class="cta-btn">
-                <a href="#contact" class="btn">Contact Me</a>
-            </div>
+    <!-- Hero -->
+    <main id="home">
+      <section class="hero">
+        <div class="container hero__inner">
+          <p class="kicker">PORTFOLIO</p>
 
+          <h1 class="title">
+            Shelton Ngwenya
+            <span class="title__sub"
+              >DevOps / Embedded / Software Engineer</span
+            >
+          </h1>
+
+          <p class="value">
+            I build commissioning-style demos: clear problem, practical
+            implementation, and evidence (docs, logs, tests).
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="sheltoncv_sd.pdf" download
+              >Download CV</a
+            >
+          </div>
+
+          <div class="chips" aria-label="Proof chips">
+            <span class="chip">Embedded</span>
+            <span class="chip">DevOps</span>
+            <span class="chip">Software</span>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      <!-- Featured Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section__title">Featured Projects</h2>
+          <div id="projectsGrid" class="cards-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section bg-clr">
+        <div class="container">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__subtitle">Grouped, scannable keywords only.</p>
+
+          <div class="cards-grid cards-grid--3">
+            <article class="card">
+              <h3 class="card__title">Embedded</h3>
+              <p class="card__text">C/C++ • FreeRTOS • STM32</p>
+              <p class="card__text">Debug/Trace • UART/TLV</p>
+            </article>
+
+            <!-- <article class="card"> -->
+            <!--   <h3 class="card__title">Industrial / OT</h3> -->
+            <!--   <p class="card__text">PLC • Interlocks • Commissioning</p> -->
+            <!--   <p class="card__text">Docs • FAT/SAT mindset</p> -->
+            <!-- </article> -->
+
+            <article class="card">
+              <h3 class="card__title">Home Lab / Platform</h3>
+              <p class="card__text">Docker • Linux • Networking</p>
+              <p class="card__text">
+                Prometheus/Grafana • Uptime Kuma • Tailscale
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Software / Web</h3>
+              <p class="card__text">JS/React • Python • SQL</p>
+              <p class="card__text">APIs • Linux • Git</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Footer -->
+      <section id="contact" class="section">
+        <div class="container contact">
+          <div class="contact__text">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__subtitle"></p>
+
+            <ul class="contact-list">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:youremail@example.com">shelt15.nn@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> Ireland</li>
+              <li>
+                <i class="fab fa-github"></i>
+                <a
+                  href="https://github.com/sheltsnn15/"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <i class="fab fa-linkedin"></i>
+                <a
+                  href="https://www.linkedin.com/in/shelton-ngwenya"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Scroll-to-top button -->
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+      aria-label="Go to top"
+    >
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </button>
 
-    <!--About Me-->
-    <section>
-        <div class=" about-me" id="about">
-            <h2 class="section__title section__title--about">
-                Who I Am
-            </h2>
-            <p class="section__subtitle section__subtitle--about">
-                Software Development Student and Freelancer
-            </p>
-            <div class="about-me__body">
-                <p>
-                    Hi, I have a keen eye for detail, highly flexible with analytical
-                    skills. I have great Object Orientated Programming techniques and I love learning new technologies
-                    to improve my knowledge.
-                </p>
-            </div>
+    <!-- Modal -->
+    <div id="projectModal" class="modal" aria-hidden="true">
+      <div class="modal__backdrop" data-close="true"></div>
+      <div
+        class="modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button
+          class="modal__close"
+          type="button"
+          data-close="true"
+          aria-label="Close modal"
+        >
+          &times;
+        </button>
+        <h3 id="modalTitle" class="modal__title">Project</h3>
+        <div id="modalBody" class="modal__body"></div>
+        <div id="modalLinks" class="modal__links"></div>
+      </div>
+    </div>
 
-            <div class="cta-btn">
-                <a href="SN CV Tech (1).pdf" class="btn">View CV <i class="fas fa-download"></i> </a>
-            </div>
-
-            <img src="./images/Shelton Profile Pic.jpg" alt="A picture of Shelton in a Park" class="about-me__img">
-
-        </div>
-
-    </section>
-
-    <!--My services-->
-    <section class="bg-clr" id="services">
-        <div class="my-services">
-            <h2 class="section__title section__title--services">
-                What I do
-            </h2>
-            <div class="row">
-                <div class="column service">
-                    <h3>Simple Programs</h3>
-                    <p>Do you need help in Programming assignment or Project? I will fulfil
-                        all your needs. Bug Fixing, Programming Assignment or Project related help in programming.
-                    </p>
-                </div>
-                <!--/ service-->
-
-                <div class="column service">
-                    <h3>Logos</h3>
-                    <p>Looking for Flat & Modern Minimalist Logo that your clients will remember and you will love?
-                        I will create and design it for you.
-                    </p>
-                </div>
-                <!--/ service-->
-
-                <div class="column service">
-                    <h3>Media Products</h3>
-                    <p>I will design and create some media products for you such as basic html and css templates for
-                        adversiting on social media platforms, posters etc.</p>
-                </div>
-                <!--/ service-->
-            </div>
-            <!--/ services-->
-            <div class="cta-btn">
-                <a href="#work" class="btn">My work</a>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!--Skills-->
-    <section class="my-work" id="skills">
-        <h2 class="section__title--services">My Skills</h2>
-        <div class="row">
-            <div class="column programming__lang-cards">
-                <h3 class="section__title section__subtitle--work">Programming Languages</h3>
-                <div class="skills-icons">
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-html-5-480.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-css3-480.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/iconfinder_code-programming-javascript-software-develop-command-language_652581.png"
-                                alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-java-480.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-c-programming-240.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-c++-480.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-nodejs-240.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/r.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/iconfinder_267_Python_4518857.png" alt="">
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="column technology-cards">
-                <h3 class="section__title section__subtitle--work">Technologies</h3>
-                <div class="skills-icons">
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-ubuntu-96.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-docker-144.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-git-480.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-microsoft-sql-server-480.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-mysql-logo-480.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/sqlite_logo_icon_169724.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/neo4j.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/mongodb_original_wordmark_logo_icon_146425.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/icons8-gimp-240.png" alt="">
-                        </span>
-                    </div>
-                    <div class="skills__button">
-                        <span class="skills-icon">
-                            <img src="./Icons/iconfinder_317716_cms_wordpress_blog_blogging_icon_512px.png" alt="">
-                        </span>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-
-    <!--My Work-->
-    <section class="bg-clr" id="projects">
-        <div class="my-work">
-            <h2 class="section__title section__title--services">
-                Projects
-            </h2>
-            <div class="wrapper">
-
-                <div class="portfolio">
-                    <div class="carousel owl-carousel">
-                        <div>
-                            <!--Item portfolio 01-->
-                            <a href="https://github.com/sheltsnn15/Hill-Climbing-Algorithm" class="portfolio__item">
-                                <img src="./images/pexels-pixabay-265087.jpg" alt="" class="portfolio__img">
-                                <div class="img__overlay">
-                                    <h2 class="img__title">Hill-Climbing Algorithm</h2>
-                                    <p class="img__description">
-                                    </p>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <!--Item portfolio 02-->
-                            <a href="https://github.com/sheltsnn15/College-DB-JPA" class="portfolio__item">
-                                <img src="./images/pexels-athena-2582931.jpg" alt="" class="portfolio__img">
-                                <div class="img__overlay">
-                                    <h2 class="img__title">JPA College Database</h2>
-                                    <p class="img__description">
-                                    </p>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <!--Item portfolio 03-->
-                            <a href="https://github.com/sheltsnn15/Taxi-Booking-System" class="portfolio__item">
-                                <img src="./images/pexels-christina-morillo-1181675.jpg" alt="" class="portfolio__img">
-                                <div class="img__overlay">
-                                    <h2 class="img__title">Taxi Booking System</h2>
-                                    <p class="img__description">
-                                    </p>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <!--Item portfolio 04-->
-                            <a href="https://github.com/sheltsnn15/Inventory" class="portfolio__item">
-                                <img src="./images/pexels-mikael-blomkvist-6483618(1).jpg" alt=""
-                                    class="portfolio__img">
-                                <div class="img__overlay">
-                                    <h2 class="img__title">Products Ordering System</h2>
-                                    <p class="img__description">
-                                    </p>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <!--Item portfolio 05-->
-                            <a href="#" class="portfolio__item">
-                                <img src="./images/pexels-mike-esparza-3702458.jpg" alt="" class="portfolio__img">
-                                <div class="img__overlay">
-                                    <h2 class="img__title">Blog Hosting System</h2>
-                                    <p class="img__description">
-                                    </p>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <!--Item portfolio 06-->
-                            <a href="https://github.com/sheltsnn15/Paper-Roll-Cutting-N-Robot-Moving-Algorithm" class="portfolio__item">
-                                <img src="./images/pexels-pixabay-257886.jpg" alt="" class="portfolio__img">
-                                <div class="img__overlay">
-                                    <h2 class="img__title">Robot-Moving Algorithm</h2>
-                                    <p class="img__description">
-                                    </p>
-
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-
-    <!--Footer-->
-    <footer class="footer" id="contact">
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a href="https://github.com/sheltsnn15/" class="social-list__link">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="linkedin.com/in/shelton-ngwenya" class="social-list__link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://www.instagram.com/shelt_snn.1/" class="social-list__link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
     <small class="copyright">
-        &copy; 2021 ShelShock Portfolio | Website by Shelton
+      &copy; 2026 Shelton Ngwenya | Built by Shelton
     </small>
-    <script src="js/index.js"></script>
-</body>
 
+    <script src="js/index.js"></script>
+  </body>
 </html>
