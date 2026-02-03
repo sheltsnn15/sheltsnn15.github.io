@@ -386,7 +386,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .tag {
@@ -405,6 +405,32 @@ h3 {
 }
 .project-link:hover {
   text-decoration: underline;
+}
+
+/* Project details in carousel */
+.project-details {
+  margin: 0.75rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--clr-accent);
+}
+
+.project-details p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Screen reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* =========================
@@ -428,6 +454,126 @@ h3 {
 .skill-category h3 {
   color: var(--clr-accent);
   margin-bottom: 1rem;
+}
+
+/* =========================
+   Carousel
+========================= */
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel__track-container {
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.carousel__track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  gap: 2rem;
+}
+
+.carousel__slide {
+  display: flex;
+  gap: 2rem;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Project cards in carousel */
+.project-card {
+  flex: 1;
+  padding: 2rem;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill cards in carousel */
+.skill-card {
+  flex: 1;
+  padding: 2rem;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+  color: var(--clr-accent);
+  margin-bottom: 1rem;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--clr-accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.carousel__button:hover {
+  background: var(--clr-brownish);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel__button--left {
+  left: -25px;
+}
+
+.carousel__button--right {
+  right: -25px;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.carousel__indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.3s;
+}
+
+.carousel__indicator.current-slide {
+  background: var(--clr-accent);
+  transform: scale(1.2);
 }
 
 /* =========================
@@ -479,6 +625,9 @@ body[data-theme="dark"] {
 }
 
 body[data-theme="dark"] .card,
+body[data-theme="dark"] .carousel__slide,
+body[data-theme="dark"] .project-card,
+body[data-theme="dark"] .skill-card,
 body[data-theme="dark"] .skill-category,
 body[data-theme="dark"] .chip {
   background: #1a1d23;
@@ -487,6 +636,14 @@ body[data-theme="dark"] .chip {
 
 body[data-theme="dark"] .tag {
   background: rgba(255, 255, 255, 0.05);
+}
+
+body[data-theme="dark"] .carousel__indicator {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+body[data-theme="dark"] .project-details {
+  border-left-color: rgba(255, 255, 255, 0.3);
 }
 
 body[data-theme="dark"] .contact-option {
@@ -544,9 +701,48 @@ body[data-theme="dark"] .contact-option:hover {
     bottom: 1rem;
     right: 1rem;
   }
+
+  .carousel__button {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .carousel__button--left {
+    left: 10px;
+  }
+
+  .carousel__button--right {
+    right: 10px;
+  }
+
+  .carousel__slide {
+    padding: 1rem;
+  }
+
+  .project-card,
+  .skill-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Switch to 1 card per slide on mobile */
+  .carousel__slide {
+    flex-direction: column;
+  }
+
+  .project-card,
+  .skill-card {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
+  .carousel__button {
+    display: none;
+  }
+
   .container {
     padding: 0 1rem;
   }

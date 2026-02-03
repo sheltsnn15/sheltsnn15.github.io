@@ -108,19 +108,63 @@
         </div>
       </section>
 
-      <!-- Projects -->
+      <!-- Projects Carousel -->
       <section id="projects" class="section">
         <div class="container">
           <h2 class="section__title">Selected Projects</h2>
-          <div id="projectsGrid" class="cards-grid"></div>
+
+          <div class="carousel">
+            <div class="carousel__track-container">
+              <div class="carousel__track"></div>
+            </div>
+
+            <button
+              class="carousel__button carousel__button--left"
+              aria-label="Previous projects"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              class="carousel__button carousel__button--right"
+              aria-label="Next projects"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel__nav">
+              <!-- Dots will be added by JavaScript -->
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Skills -->
+      <!-- Skills Carousel -->
       <section id="skills" class="section bg-clr">
         <div class="container">
           <h2 class="section__title">Technical Focus</h2>
-          <div id="skillsGrid" class="skills-grid"></div>
+
+          <div class="carousel carousel--skills">
+            <div class="carousel__track-container">
+              <div class="carousel__track"></div>
+            </div>
+
+            <button
+              class="carousel__button carousel__button--left"
+              aria-label="Previous skills"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              class="carousel__button carousel__button--right"
+              aria-label="Next skills"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel__nav">
+              <!-- Dots will be added by JavaScript -->
+            </div>
+          </div>
         </div>
       </section>
     </main>
