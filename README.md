@@ -2,60 +2,56 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Portfolio MVP](#portfolio-mvp)
-  - [How To Customize](#how-to-customize)
-    - [Update Hero](#update-hero)
-    - [Add/Change Projects](#addchange-projects)
-  - [Next Iterations](#next-iterations)
+- [Portfolio](#portfolio)
+  - [Update](#update)
+  - [Features](#features)
+  - [Deploy](#deploy)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Portfolio MVP
+# Portfolio
 
-This repo implements a **single-page portfolio MVP** based on a condensed wireframe:
+Minimal portfolio that links to CV/GitHub.
 
-**Header/Nav -> Hero -> Featured Projects -> Skills -> Contact/Footer**
+## Update
 
-The goal is a fast, scannable layout that supports **feature-driven learning** (DOM, state, events, localStorage, modals).
+1. Edit `index.html` - Your info in hero
+   - Name, role, contact info in hero section
+   - Update CV filename in download link
+2. Edit `js/index.js` - Your projects & skills
 
----
+   ```js
+   // Add your projects
+   projects: [
+     {
+       title: "Project Name",
+       summary: "Brief description",
+       tags: ["Tech", "Stack"],
+       link: "https://github.com/..."
+     }
+   ],
+   
+   // Add your skills
+   skills: [
+     {
+       title: "Category",
+       items: ["Skill 1", "Skill 2"]
+     }
+   ]
+   ```
 
-## How To Customize
+3. Add your logo and CV
 
-### Update Hero
+- Logo: images/LOGO(2).png
+- CV: sheltoncv_sd.pdf (or rename in HTML)
 
-Edit:
+## Features
 
-- Name
-- Target role line
-- Value proposition sentence
-- Buttons (CV filename + links)
+- Dark/light theme (saves preference)
+- Mobile-friendly navigation
+- Fast loading
+- Direct links to GitHub/CV
 
-### Add/Change Projects
+## Deploy
 
-In `js/index.js`, edit:
-
-```js
-state.projects = [
-  {
-    id: "my-project",
-    title: "...",
-    problem: "...",
-    approach: "...",
-    evidence: "...",
-    tags: ["..."],
-    links: [{ label: "GitHub", href: "..." }]
-  }
-]
-
-```
-
----
-
-## Next Iterations
-
-- Add project filters (All / Featured)
-- Add search with debounce
-- Add GitHub API “Latest repos” section (loading/error states)
-- Split JS into modules: `state.js`, `ui.js`, `api.js`
-- Improve accessibility (focus trap in modal)
+Push to GitHub → Settings → Pages
