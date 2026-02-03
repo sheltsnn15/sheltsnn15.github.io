@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
@@ -16,28 +15,23 @@
     <link
       href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400"
       rel="stylesheet"
-      type="text/css"
     />
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/jpg" href="./Icons/favicon.ico" />
+    <link rel="icon" href="./Icons/favicon.ico" />
 
-    <title>Shelton Ngwenya | Portfolio</title>
+    <title>Shelton Ngwenya | System Integration Engineer</title>
   </head>
 
   <body>
-    <!-- Header / Nav -->
+    <!-- Header -->
     <header id="navbar">
       <nav class="navbar-container container">
         <a class="logo" href="#home" aria-label="Home">
-          <img src="./images/LOGO(2).png" alt="Shelton logo" />
+          <img src="./images/LOGO(2).png" alt="Shelton Ngwenya" />
         </a>
 
-        <button
-          type="button"
-          class="navbar-toggle"
-          aria-label="Open navigation menu"
-        >
+        <button type="button" class="navbar-toggle" aria-label="Menu">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -51,20 +45,9 @@
             <li class="navbar-item">
               <a class="navbar-link" href="#skills">Skills</a>
             </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#contact">Contact</a>
-            </li>
-
-            <!-- Optional: Theme toggle -->
             <li class="navbar-item navbar-item--theme">
-              <button
-                id="themeToggle"
-                class="theme-toggle"
-                type="button"
-                aria-label="Toggle theme"
-              >
-                <i class="fas fa-adjust" aria-hidden="true"></i>
-                <span class="theme-toggle__label">Theme</span>
+              <button id="themeToggle" class="theme-toggle" aria-label="Theme">
+                <i class="fas fa-adjust"></i>
               </button>
             </li>
           </ul>
@@ -72,24 +55,19 @@
       </nav>
     </header>
 
-    <!-- Hero -->
+    <!-- Main Content -->
     <main id="home">
+      <!-- Hero -->
       <section class="hero">
         <div class="container hero__inner">
-          <p class="kicker">PORTFOLIO</p>
-
-          <h1 class="title">
-            Shelton Ngwenya
-            <span class="title__sub"
-              >DevOps / Embedded / Software Engineer</span
-            >
-          </h1>
-
+          <h1 class="title">Shelton Ngwenya</h1>
+          <p class="tagline">System Integration Engineer</p>
           <p class="value">
-            I build commissioning-style demos: clear problem, practical
-            implementation, and evidence (docs, logs, tests).
+            Building integrated systems from embedded controllers to cloud
+            infrastructure.
           </p>
 
+          <!-- Primary CTA -->
           <div class="cta">
             <a class="btn" href="#projects">View Projects</a>
             <a class="btn btn--ghost" href="sheltoncv_sd.pdf" download
@@ -97,131 +75,65 @@
             >
           </div>
 
-          <div class="chips" aria-label="Proof chips">
+          <!-- Contact Options -->
+          <div class="contact-options">
+            <a
+              href="https://github.com/sheltsnn15"
+              target="_blank"
+              class="contact-option"
+            >
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:shelt15.nn@gmail.com" class="contact-option">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/shelton-ngwenya"
+              target="_blank"
+              class="contact-option"
+            >
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Skills Chips -->
+          <div class="chips">
             <span class="chip">Embedded</span>
             <span class="chip">DevOps</span>
-            <span class="chip">Software</span>
+            <span class="chip">Full-Stack</span>
           </div>
         </div>
       </section>
 
-      <!-- Featured Projects -->
+      <!-- Projects -->
       <section id="projects" class="section">
         <div class="container">
-          <h2 class="section__title">Featured Projects</h2>
-          <div id="projectsGrid" class="cards-grid" aria-live="polite"></div>
+          <h2 class="section__title">Selected Projects</h2>
+          <div id="projectsGrid" class="cards-grid"></div>
         </div>
       </section>
 
       <!-- Skills -->
       <section id="skills" class="section bg-clr">
         <div class="container">
-          <h2 class="section__title">Skills</h2>
-          <p class="section__subtitle">Grouped, scannable keywords only.</p>
-
-          <div class="cards-grid cards-grid--3">
-            <article class="card">
-              <h3 class="card__title">Embedded</h3>
-              <p class="card__text">C/C++ • FreeRTOS • STM32</p>
-              <p class="card__text">Debug/Trace • UART/TLV</p>
-            </article>
-
-            <!-- <article class="card"> -->
-            <!--   <h3 class="card__title">Industrial / OT</h3> -->
-            <!--   <p class="card__text">PLC • Interlocks • Commissioning</p> -->
-            <!--   <p class="card__text">Docs • FAT/SAT mindset</p> -->
-            <!-- </article> -->
-
-            <article class="card">
-              <h3 class="card__title">Home Lab / Platform</h3>
-              <p class="card__text">Docker • Linux • Networking</p>
-              <p class="card__text">
-                Prometheus/Grafana • Uptime Kuma • Tailscale
-              </p>
-            </article>
-
-            <article class="card">
-              <h3 class="card__title">Software / Web</h3>
-              <p class="card__text">JS/React • Python • SQL</p>
-              <p class="card__text">APIs • Linux • Git</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact / Footer -->
-      <section id="contact" class="section">
-        <div class="container contact">
-          <div class="contact__text">
-            <h2 class="section__title">Contact</h2>
-            <p class="section__subtitle"></p>
-
-            <ul class="contact-list">
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:youremail@example.com">shelt15.nn@gmail.com</a>
-              </li>
-              <li><i class="fas fa-map-marker-alt"></i> Ireland</li>
-              <li>
-                <i class="fab fa-github"></i>
-                <a
-                  href="https://github.com/sheltsnn15/"
-                  target="_blank"
-                  rel="noopener"
-                  >GitHub</a
-                >
-              </li>
-              <li>
-                <i class="fab fa-linkedin"></i>
-                <a
-                  href="https://www.linkedin.com/in/shelton-ngwenya"
-                  target="_blank"
-                  rel="noopener"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </div>
+          <h2 class="section__title">Technical Focus</h2>
+          <div id="skillsGrid" class="skills-grid"></div>
         </div>
       </section>
     </main>
 
-    <!-- Scroll-to-top button -->
-    <button
-      onclick="topFunction()"
-      id="myBtn"
-      title="Go to top"
-      aria-label="Go to top"
-    >
-      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    <!-- Scroll to top -->
+    <button id="myBtn" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Modal -->
-    <div id="projectModal" class="modal" aria-hidden="true">
-      <div class="modal__backdrop" data-close="true"></div>
-      <div
-        class="modal__dialog"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modalTitle"
-      >
-        <button
-          class="modal__close"
-          type="button"
-          data-close="true"
-          aria-label="Close modal"
-        >
-          &times;
-        </button>
-        <h3 id="modalTitle" class="modal__title">Project</h3>
-        <div id="modalBody" class="modal__body"></div>
-        <div id="modalLinks" class="modal__links"></div>
-      </div>
-    </div>
-
-    <small class="copyright">
-      &copy; 2026 Shelton Ngwenya | Built by Shelton
-    </small>
+    <!-- Footer -->
+    <footer class="footer">
+      <small>&copy; 2026 Shelton Ngwenya</small>
+    </footer>
 
     <script src="js/index.js"></script>
   </body>
