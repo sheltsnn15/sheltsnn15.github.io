@@ -22,7 +22,7 @@ const PORTFOLIO = {
       title: "Home Lab Monitoring",
       summary: "Self-hosted services with full observability stack",
       tags: ["Docker", "Prometheus", "Grafana", "Linux"],
-      link: "https://github.com/sheltsnn15/Smart-Home",
+      link: "https://github.com/sheltsnn15/home-lab",
     },
     {
       id: "air-quality",
